@@ -34,15 +34,13 @@ module.exports = {
   },
 
   fn: function (inputs,exits) {
-    require('nodemailer')
-    .createTransport({
-      service: inputs.service,
-      auth: inputs.auth
-    })
-    .sendMail(inputs.mail, function(err, result){
-      if (err) return exits.error(err);
-      return exits.success(result);
-    });
+    var h = require('../lib/helper');
+    if (inputs.mail.templatesDir) {
+      h.sendWithTpl(inputs, exits);
+    } else {
+      console.log("simple mail");
+      h.sendMail(inputs, exits);
+    }
   },
 
 };
