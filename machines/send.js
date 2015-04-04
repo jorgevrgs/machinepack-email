@@ -1,13 +1,14 @@
 module.exports = {
 
   friendlyName: 'Send',
-  description: 'Send a email (SMTP)',
-  extendedDescription: 'A simple use of nodemailer for sending email',
+  description: 'Simply send an email with nodemailer and email-template (SMTP)',
+  extendedDescription: 'See tests/test.js for example',
 
   inputs: {
     auth: {
       typeclass: '*',
-      description: "an object, e.g: {user: 'username', pass:'password'}",
+      description: "an object",
+      extendedDescription: "e.g: {user: 'username', pass:'password'}",
       required: true
     },
     service: {
@@ -17,7 +18,8 @@ module.exports = {
     },
     mail: {
       typeclass: '*',
-      description: "e.g: { from: 'test@test.com', to: 'test@test.fr', subject: 'Hello Mike!', text: 'Yep message..'}",
+      description: "Object of your mail (from, to, ...). See tests/test.js for example",
+      extendedDescription: "e.g: {user: 'username', pass:'password'}",
       required: true
     }
   },
