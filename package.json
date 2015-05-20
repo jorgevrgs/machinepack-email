@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "mocha": "^2.2.1",
+    "nodemailer-stub-transport": "^1.0.0",
     "should": "^5.2.0",
     "test-machinepack-mocha": "^0.2.2"
   },

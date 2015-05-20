@@ -3,7 +3,7 @@ var path = require('path')
   , email = require("../index.js");
 
 describe('test with your access', function(){
-  it('basic example', function(done){
+  xit('basic example', function(done){
     var config = {
       service: 'Gmail',
       auth: {
@@ -23,7 +23,7 @@ describe('test with your access', function(){
     });
   });
 
-  it('example with template engine', function(done){
+  xit('example with template engine', function(done){
     var config = {
       service: 'Gmail',
       auth: {
@@ -47,4 +47,27 @@ describe('test with your access', function(){
     });
   });
 
+  it('should work with stub', function(done) {
+    var config = {
+      service: 'Stub',
+      customTransport: 'nodemailer-stub-transport',
+      auth: {},
+      mail: {
+        from: 'contact@example.fr',
+        to: 'contact@example.fr',
+        subject: 'pfff..Hello the world!',
+        text: "Eh what's happen...No, It's not working."
+      }
+    };
+    
+    email.send(config).exec(function(err, result) {
+      should.not.exist(err);
+      
+      result.should.have.property('messageId');
+      result.should.have.property('response');
+      
+      done();
+    })
+  });
+  
 });

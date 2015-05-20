@@ -2,8 +2,17 @@
   "machine": "send",
   "expectations": [
     {
-      "todo": true,
-      "using": {},
+      "using": {
+        "service": "Stub",
+        "customTransport": "nodemailer-stub-transport",
+        "auth": {},
+        "mail": {
+          "from": "contact@example.fr",
+          "to": "contact@example.fr",
+          "subject": "pfff..Hello the world!",
+          "text": "Eh what's happen...No, It's not working."
+        }
+      },
       "outcome": "success"
     }
   ]
