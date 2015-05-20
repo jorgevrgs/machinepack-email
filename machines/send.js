@@ -5,6 +5,11 @@ module.exports = {
   extendedDescription: 'See tests/test.js for example',
 
   inputs: {
+    customTransport: {
+      example: 'nodemailer-stub-transport',
+      description: 'A service module (see https://github.com/andris9/Nodemailer#available-transports for the listing)',
+      required: false
+    },
     auth: {
       typeclass: '*',
       description: "an object",
@@ -40,7 +45,7 @@ module.exports = {
     if (inputs.mail.templatesDir) {
       h.sendWithTpl(inputs, exits);
     } else {
-      console.log("simple mail");
+      //console.log("simple mail");
       h.sendMail(inputs, exits);
     }
   },
