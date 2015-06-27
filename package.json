@@ -1,6 +1,6 @@
 {
   "name": "machinepack-email",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simply send an email with nodemailer and email-templates",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
