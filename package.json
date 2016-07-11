@@ -1,7 +1,7 @@
 {
   "name": "machinepack-email",
   "version": "0.1.2",
-  "description": "Simply send an email with nodemailer and email-templates",
+  "description": "Simply send an email with nodemailer/email-templates (includes support for HTML email templates).",
   "scripts": {
     "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
   },
@@ -13,15 +13,15 @@
   "author": "wi2",
   "license": "MIT",
   "dependencies": {
-    "email-templates": "^1.2.1",
-    "machine": "^3.0.0",
-    "nodemailer": "^1.3.2"
+    "email-templates": "1.3.0",
+    "machine": "^12.2.5",
+    "nodemailer": "1.11.0"
   },
   "devDependencies": {
-    "mocha": "^2.2.1",
+    "mocha": "2.2.1",
     "nodemailer-stub-transport": "^1.0.0",
-    "should": "^5.2.0",
-    "test-machinepack-mocha": "^0.2.2"
+    "should": "5.2.0",
+    "test-machinepack-mocha": "^2.1.5"
   },
   "machinepack": {
     "friendlyName": "Email",

@@ -5,7 +5,7 @@
 
 ### [Docs](http://node-machine.org/machinepack-email) &nbsp; [Browse other machines](http://node-machine.org/machinepacks) &nbsp;  [FAQ](http://node-machine.org/implementing/FAQ)  &nbsp;  [Newsgroup](https://groups.google.com/forum/?hl=en#!forum/node-machine)
 
-Simply send and reveive email
+Simply send an email with `nodemailer`/`email-templates` (includes support for HTML email templates).
 
 
 ## Installation &nbsp; [![NPM version](https://badge.fury.io/js/machinepack-email.svg)](http://badge.fury.io/js/machinepack-email) [![Build Status](https://travis-ci.org/wi2/machinepack-email.png?branch=master)](https://travis-ci.org/wi2/machinepack-email)
