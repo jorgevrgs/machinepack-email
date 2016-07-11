@@ -33,6 +33,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:wi2/machinepack-email.git"
+    "url": "git+ssh://git@github.com/wi2/machinepack-email.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wi2/machinepack-email/issues"
+  },
+  "homepage": "https://github.com/wi2/machinepack-email#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
   }
 }
