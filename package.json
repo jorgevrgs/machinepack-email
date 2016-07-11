@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "Simply send an email with nodemailer/email-templates (includes support for HTML email templates).",
   "scripts": {
-    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js && node ./node_modules/mocha/bin/mocha tests/ --recursive -b"
   },
   "keywords": [
     "Email",
